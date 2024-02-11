@@ -4,6 +4,7 @@ import {styles} from '../styles'
 import { useState,useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 import {logo,menu,close} from '../assets'
+import {navLinks} from '../constant'
 
 const Navbar = () => {
   return (
@@ -29,8 +30,20 @@ const Navbar = () => {
 
           </Link>
 
+          <ul className='list-none hidden sm:flex flex-row gap-10'>
+          {navLinks.map((link) => (
+            
+
+            <li>
+                  <a href={`#${link.id}`}> {link.title} </a>
+            </li>
+            
+          ))}
+            
+          </ul>
+
           
- </div>
+        </div>
     </nav>
   )
 
