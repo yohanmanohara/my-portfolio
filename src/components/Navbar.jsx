@@ -21,9 +21,9 @@ const Navbar = () => {
           }}
           >
 
-             <img src={logo} alt='logo' className=' pb-3 pt-2' height={3} width={50}   />
+             <img src={logo} alt='logo' className=' pb-3 pt-2' height={100} width={60}   />
              <p className='text-white text-[18px] font-bold cursor-pointer flex  '>
-            YOHAN MANOHARA&nbsp;
+            MANOHARA&nbsp;
             <span className='sm:block hidden'> | Fullstack Developer</span>
           </p>
 
